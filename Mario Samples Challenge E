@@ -1,10 +1,12 @@
 # Challenge E
+# VARIABLES TO STORE SAMPLES
+mario_intro = "C:/Users/jacob_davis/Downloads/mario_sounds/mario_sounds/mario_intro.wav"
+
+sample "C:/Users/jacob_davis/Downloads/mario_sounds/mario_sounds/mario_intro.wav"
+sleep 4
+
 use_bpm 180
 use_synth :chipbass
-
-# VARIABLES TO STORE SAMPLES
-
-
 
 
 # INTRO
@@ -40,6 +42,13 @@ sleep 0.5
 play :a3
 sleep 1
 
+# VARIABLES TO STORE SAMPLES
+mushroom = "C:/Users/jacob_davis/Downloads/mario_sounds/mario_sounds/mushroom.wav"
+sample mushroom
+sample "C:/Users/jacob_davis/Downloads/mario_sounds/mario_sounds/mushroom.wav"
+
+sleep 2
+
 #PART TWO
 play :g3
 sleep 2/3.0 #0.666666...
@@ -61,3 +70,8 @@ play :d4
 sleep 0.5
 play :b3
 sleep 1
+"C:/Users/jacob_davis/Downloads/mario_sounds/mario_sounds/mushroom.wav"
+# VARIABLES TO STORE SAMPLES
+coin = "C:/Users/jacob_davis/Downloads/mario_sounds/mario_sounds/coin.wav"
+sample coin
+"C:/Users/jacob_davis/Downloads/mario_sounds/mario_sounds/coin.wav"
