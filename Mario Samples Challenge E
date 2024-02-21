@@ -25,7 +25,8 @@ sleep 2
 play :g3
 sleep 2
 
-
+#DEFINITION OF FUNCTION
+define : Mario do
 # PART ONE
 play :c4
 sleep 1.5
