@@ -1,0 +1,108 @@
+use_bpm 120
+use_synth :chiplead
+
+#FUNCTION DEFINITIONS
+define :any_two_notes do |x, y|
+  play x
+  play y
+  sleep 0.5
+  
+  #MEASURE 1----------------------------------------------
+  any_two_notes :a4, :a5
+  any_two_notes :a4, :a5
+  any_two_notes :c5, :c6
+  any_two_notes :a4, :a5
+  any_two_notes :d5, :d6
+  any_two_notes :a4, :a5
+  any_two_notes :e5, :e6
+  any_two_notes :d5,:d6
+  
+end
+
+#FUNCTIONS DEFINITIONS
+define :Measure2 do |x, y|
+  play x
+  play y
+  sleep 0.5
+end
+Measure2 :c5, :c6
+Measure2 :c5, :c6
+Measure2 :e5, :e6
+Measure2 :c5, :c6
+Measure2 :g5, :g6
+Measure2 :c4, :c5
+Measure2 :e5, :e6
+Measure2 :c4, :c5
+
+
+
+#FUNCTION DEFINITIONS
+define :measure3 do |n, s|
+  play n
+  sleep s
+  
+  play :g4
+  play :g5
+  sleep 0.5
+  
+  play :g4
+  play :g5
+  sleep 0.5
+  
+  play :b4
+  play :b5
+  sleep 0.5
+  
+  play :g4
+  play :g5
+  sleep 0.5
+  
+  play :c5
+  play :c6
+  sleep 0.5
+  
+  play :g4
+  play :g5
+  sleep 0.5
+  
+  play :d5
+  play :d6
+  sleep 0.5
+  
+  play :c5
+  play :c6
+  sleep 0.5
+end
+
+# MEASURE 4 ---------------------------
+play :f4
+play :f5
+sleep 0.5
+
+play :f4
+play :f5
+sleep 0.5
+
+play :a4
+play :a5
+sleep 0.5
+
+play :f4
+play :f5
+sleep 0.5
+
+play :c5
+play :c6
+sleep 0.5
+
+play :f4
+play :f5
+sleep 0.5
+
+play :c5
+play :c6
+sleep 0.5
+
+play :b4
+play :b5
+sleep 0.5
