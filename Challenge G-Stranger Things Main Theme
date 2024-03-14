@@ -1,0 +1,78 @@
+# Stranger Things Main Theme
+use_bpm 160
+use_synth :saw
+
+#FUNCTION DEFINITIONS
+define :noteANDsleep do |n, s|
+  play n
+  sleep s
+end
+
+live_loop :main_theme do
+  with_fx :distortion do
+    #second octave
+    noteANDsleep :c2, 0.5
+    noteANDsleep :e2,0.5
+    noteANDsleep :g2, 0.5
+    noteANDsleep :b2, 0.5
+    noteANDsleep  :c3,0.5
+    noteANDsleep  :b2, 0.5
+    noteANDsleep :g2, 0.5
+    noteANDsleep  :e2, 0.5
+    
+    
+    #third octave
+    play :c3
+    #second octave
+    
+    sleep 0.5
+    play :e3
+    sleep 0.5
+    play :g3
+    sleep 0.5
+    play :b3
+    sleep 0.5
+    play :c4
+    sleep 0.5
+    play :b3
+    sleep 0.5
+    play :g3
+    sleep 0.5
+    play :e3
+    sleep 0.5
+    #fourth octave
+    play :c4
+    sleep 0.5
+    play :e4
+    sleep 0.5
+    play :g4
+    sleep 0.5
+    play :b4
+    sleep 0.5
+    play :c5
+    sleep 0.5
+    play :b4
+    sleep 0.5
+    play :g4
+    sleep 0.5
+    play :e4
+    sleep 0.5
+    #fifth octave
+    play :c5
+    sleep 0.5
+    play :e5
+    sleep 0.5
+    play :g5
+    sleep 0.5
+    play :b5
+    sleep 0.5
+    play :c6
+    sleep 0.5
+    play :b5
+    sleep 0.5
+    play :g5
+    sleep 0.5
+    play :e5
+    sleep 0.5
+  end
+end
