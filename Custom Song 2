@@ -1,0 +1,63 @@
+#optimize with an array
+my_samps = [ :r, :E3, :G3, :r, :F3, :G3, :r, :G3, :G3, :E4, :D4, :C4, :B, :G3, :C3,:c3, :D3, :D3,:E3,:r,]
+
+i = i + 1
+
+last_night_intro = "C:/Users/jacob_davis/Desktop/Morgan Wallen - Last Night (ACAPELLA).mp3"
+
+sample "C:/Users/jacob_davis/Desktop/Morgan Wallen - Last Night (ACAPELLA).mp3"
+sleep 8
+
+use_bpm 102
+use_synth :piano
+
+
+live_loop :vocalnotes do
+  sample :drum_bass_hard, amp: 2
+  my_samps [0]
+  sleep 0.5
+  i = i + 1
+  my_samps [1]
+  sleep 0.5
+  i = i + 1
+  
+  my_samps [2]
+  sleep 1
+  i =i + 1
+  play :r, amp: 8
+  sleep 0.5
+  play :F3, amp: 8
+  sleep 0.5
+  play :G3, amp: 8
+  sleep 1
+  play :r, amp: 8
+  sleep 0.5
+  play :G3, amp: 8
+  sleep 0.5
+  play :G3, amp: 8
+  sleep 0.5
+  play :E4, amp: 8
+  sleep 0.5
+  play :D4, amp: 8
+  sleep 0.5
+  play :C4, amp: 8
+  sleep 0.5
+  play :B, amp: 8
+  sleep 0.5
+  play :G3, amp: 8
+  sleep 0.5
+  play :C3, amp: 8
+  sleep 1.5
+  play :c3, amp: 8
+  sleep 0.5
+  play :D3, amp: 8
+  sleep 1.5
+  play :D3, amp: 8
+  sleep 1.5
+  play :E3, amp: 8
+  sleep 2
+  play :r, amp: 8
+  sleep 2
+end
+#stop playing notes and drum sample
+
