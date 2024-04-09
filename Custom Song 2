@@ -3,10 +3,11 @@ my_samps = [ :r, :E3, :G3, :r, :F3, :G3, :r, :G3, :G3, :E4, :D4, :C4, :B, :G3, :
 
 i = i + 1
 
+
 last_night_intro = "C:/Users/jacob_davis/Desktop/Morgan Wallen - Last Night (ACAPELLA).mp3"
 
 sample "C:/Users/jacob_davis/Desktop/Morgan Wallen - Last Night (ACAPELLA).mp3"
-sleep 8
+sleep 4
 
 use_bpm 102
 use_synth :piano
@@ -59,5 +60,6 @@ live_loop :vocalnotes do
   play :r, amp: 8
   sleep 2
 end
-#stop playing notes and drum sample
+
+
 
